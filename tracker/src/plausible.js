@@ -40,7 +40,7 @@
 
     }
     {{#if exclusions}}
-    var dataIncludeAttr = scriptEl && scriptEl.getAttribute('data-include')  
+    var dataIncludeAttr = scriptEl && scriptEl.getAttribute('data-include')
     var dataExcludeAttr = scriptEl && scriptEl.getAttribute('data-exclude')
 
     if (eventName === 'pageview') {
@@ -148,7 +148,7 @@
   var fileTypesToTrack = (fileTypesAttr && fileTypesAttr.split(",")) || (addFileTypesAttr && addFileTypesAttr.split(",").concat(defaultFileTypes)) || defaultFileTypes;
 
   function handleDownload(event) {
-    
+
     var link = event.target;
     var middle = event.type === 'auxclick' && event.which === 2;
     var click = event.type === 'click';
